@@ -87,7 +87,7 @@ body, html {
     z-index: 10;
 }
 
-/* cannot make this work! going to sleep now! */
+/* cannot make this work! going to sleep now! will fix next time */
 .dish_sec:hover + .hd_name {
     display : none;
 }
