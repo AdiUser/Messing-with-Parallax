@@ -182,3 +182,32 @@ body, html {
         z-index : -1;
     }
 }
+
+@media only screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+   
+  .timeline ul li div {
+    /* width: calc(100vw - 91px); */
+  }
+   
+  .timeline ul li:nth-child(even) div {
+    /* left: 469px; */
+  }
+   
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px; /*250+45-6*/
+  }
+}
