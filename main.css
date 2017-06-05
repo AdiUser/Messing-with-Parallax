@@ -81,11 +81,11 @@ body, html {
     font-weight: bold;
     text-decoration : underline;
     top : 62%;
-    left : 64%;
+    left : 62%;
     z-index: 10;
 }
 
-/* the '+' selector works only when the other element is exactly after the :hover element [here] */
+/* the '+' selector works only when the other element is exactly after the :hover element {here} */
 .dish_main:hover + .hd_name {
     display : block;
 }
@@ -108,5 +108,9 @@ body, html {
         display : block;
         font-size : 1.8em;
         text-align: center;
+    }
+
+    .hd_name {
+        z-index : -1;
     }
 }
