@@ -95,6 +95,10 @@ body, html {
 }
 /* timeline things */
 
+.timeline ul {
+  padding : 0px;
+}
+
 .timeline ul li {
   list-style-type: none;
   position: relative;
