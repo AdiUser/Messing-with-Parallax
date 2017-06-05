@@ -115,6 +115,10 @@ body, html {
   border-radius: 50%;
   background: inherit;
 }
+
+.timeline ul li:last-child:after {
+  display : none;
+}
 /* handling mobile view*/
 @media only screen and (max-width: 400px) {
     .dish_main {
