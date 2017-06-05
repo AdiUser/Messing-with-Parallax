@@ -20,11 +20,11 @@ body, html {
 }
 
 .dish_main {
-    height : 40%;
-    width : 30%;
+    height : 35%;
+    width : 20%;
     position: absolute;
     top : 45%;
-    left : 34%;
+    left : 39%;
     z-index: 2;
     background-color : grey;
 }
@@ -74,22 +74,20 @@ body, html {
 
 /* on hover- show name [desktop mode!]*/
 .hd_name {
-    display : block;
+    display : none;
     position : absolute;
     font-size: 2em;
     color : #fff;
     font-weight: bold;
-    outline: black;
-    border-bottom : solid 4px;
-    //border-radius : 4px;
+    text-decoration : underline;
     top : 62%;
-    left : 66%;
+    left : 64%;
     z-index: 10;
 }
 
-/* cannot make this work! going to sleep now! will fix next time */
-.dish_sec:hover + .hd_name {
-    display : none;
+/* the '+' selector works only when the other element is exactly after the :hover element [here] */
+.dish_main:hover + .hd_name {
+    display : block;
 }
 
 /* handling mobile view*/
