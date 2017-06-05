@@ -90,6 +90,10 @@ body, html {
     display : block;
 }
 
+.plate_section{
+    margin-top : 12%;
+}
+
 /* handling mobile view*/
 @media only screen and (max-width: 400px) {
     .dish_main {
