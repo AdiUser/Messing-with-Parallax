@@ -161,7 +161,36 @@ body, html {
   border-color: transparent transparent transparent #F45B69;
 }
 
+/* animate things */
 
+.timeline ul li::after {
+  background: #fff;
+  transition: background .5s ease-in-out;
+}
+ 
+.timeline ul li.in-view::after {
+  background: #F45B69;
+}
+ 
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+ 
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px,0,0);
+}
+ 
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px,0,0);
+}
+ 
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
 /* handling mobile view*/
 @media only screen and (max-width: 400px) {
     .dish_main {
